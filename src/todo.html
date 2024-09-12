@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>TODO-App</title>
+</head>
+<body class="md:flex overflow-x-hidden dark:bg-dark-bg-body">
+    
+    <section class="md:flex hidden w-1/5 h-screen gap-5 ">
+        <nav class="bg-light-bg-wight w-full mr-5 my-5 rounded-xl shadow-xl dark:bg-dark-bg-nav hidden md:block">
+            <div class="hidden md:flex md:justify-center md:items-center md:gap-3 md:pt-5">
+                <img src="../assets/image/profile-pic.png" alt="profile-picture">
+                <div>
+                    <p class="font-bold dark:text-light-bg-wight">سلام ، رویا</p>
+                    <p class="text-sm text-gray-400">امروز ، سه شنبه ، ۵ بهمن ۱۴۰۲</p>
+                </div>
+            </div>
+            <div class="flex justify-around items-center md:hidden">
+                <p>کوئرا لیست</p>
+                <svg id="hambergur-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </div>
+            <div class="pt-10 pr-6 pl-3 dark:text-light-bg-wight">
+                <ul>
+                    <li class="text-light-nav-hover bg-blue-100 hover:cursor-pointer flex items-center gap-7  p-[10px] rounded-lg dark:hover:bg-dark-nav-bg-hover">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                        <p>خانه</p>
+                    </li>
+                    <li class="hover:text-light-nav-hover hover:bg-blue-100 hover:cursor-pointer flex items-center gap-7  p-[10px] rounded-lg dark:hover:bg-dark-nav-bg-hover">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122" />
+                        </svg>
+                        <p>تسک ها</p>
+                    </li>                    
+                    <li class="hover:text-light-nav-hover hover:bg-blue-100 hover:cursor-pointer flex items-center gap-7  p-[10px] rounded-lg dark:hover:bg-dark-nav-bg-hover">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5m-6.75-6h2.25m-9 2.25h4.5m.002-2.25h.005v.006H12v-.006Zm-.001 4.5h.006v.006h-.006v-.005Zm-2.25.001h.005v.006H9.75v-.006Zm-2.25 0h.005v.005h-.006v-.005Zm6.75-2.247h.005v.005h-.005v-.005Zm0 2.247h.006v.006h-.006v-.006Zm2.25-2.248h.006V15H16.5v-.005Z" />
+                        </svg>
+                        <p>تقویم</p>
+                    </li>                    
+                    <li class="hover:text-light-nav-hover hover:bg-blue-100 hover:cursor-pointer flex items-center gap-7  p-[10px] rounded-lg dark:hover:bg-dark-nav-bg-hover">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                        </svg>
+                        <p>گزارشات</p>
+                    </li>                    
+                    <li class="hover:text-light-nav-hover hover:bg-blue-100 hover:cursor-pointer flex items-center gap-7  p-[10px] rounded-lg dark:hover:bg-dark-nav-bg-hover">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                        <p>تنطیمات</p>
+                    </li>                    
+                    <li class="hover:text-light-nav-hover hover:bg-blue-100 hover:cursor-pointer flex items-center gap-7  p-[10px] rounded-lg dark:hover:bg-dark-nav-bg-hover">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                        </svg>
+                        <p>پشتیبانی</p>
+                    </li>                    
+                    <li class="hover:text-light-nav-hover hover:bg-blue-100 hover:cursor-pointer flex items-center gap-7  p-[10px] rounded-lg dark:hover:bg-dark-nav-bg-hover">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                        </svg>
+                        <p>پروفایل</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex justify-center items-center mt-28 lg:w-[70%] md:w-[85%] mx-auto bg-gray-300 py-2 px-5 rounded-xl dark:bg-dark-nav-btn dark:text-light-bg-wight">
+                <button id="light-btn" class="flex items-center gap-2 p-2  rounded-xl bg-light-bg-wight">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                    </svg>
+                    <p>روشن</p>
+                </button>
+                <button id="dark-btn" class=" flex items-center gap-2 p-2 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                    </svg>
+                    <p>تاریک</p>
+                </button>
+
+            </div>
+            <div class="flex items-center gap-3  mx-auto text-right  pt-4 w-2/3 border-t mt-5 cursor-pointer hover:text-red-500 dark:text-light-bg-wight dark:hover:text-red-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
+                </svg>
+                <p>خروج</p>
+            </div>
+        </nav>
+    </section>
+
+    <section id="menu-mobile" class=" md:hidden absolute top-0 right-[-450px] w-3/5 h-screen gap-5 ">
+        <nav class="bg-light-bg-wight w-full mr-5 my-5 rounded-xl shadow-xl dark:bg-dark-bg-nav  md:block">
+            <div class="flex justify-around items-center pt-3">
+                <p class="dark:text-light-bg-wight">کوئرا لیست</p>
+                <svg id="exit-menu" class="cursor-pointer w-6 hover:text-red-500 dark:hover:text-red-500 dark:text-light-bg-wight" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </div>
+            <div class="pt-10 pr-6 pl-3 dark:text-light-bg-wight">
+                <ul>
+                    <li class="text-light-nav-hover bg-blue-100 hover:cursor-pointer flex items-center gap-7  p-3 rounded-lg dark:hover:bg-dark-nav-bg-hover">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                        <p>خانه</p>
+                    </li>
+                    <li class="hover:text-light-nav-hover hover:bg-blue-100 hover:cursor-pointer flex items-center gap-7  p-3 rounded-lg dark:hover:bg-dark-nav-bg-hover">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122" />
+                        </svg>
+                        <p>تسک ها</p>
+                    </li>                    
+                    <li class="hover:text-light-nav-hover hover:bg-blue-100 hover:cursor-pointer flex items-center gap-7  p-3 rounded-lg dark:hover:bg-dark-nav-bg-hover">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5m-6.75-6h2.25m-9 2.25h4.5m.002-2.25h.005v.006H12v-.006Zm-.001 4.5h.006v.006h-.006v-.005Zm-2.25.001h.005v.006H9.75v-.006Zm-2.25 0h.005v.005h-.006v-.005Zm6.75-2.247h.005v.005h-.005v-.005Zm0 2.247h.006v.006h-.006v-.006Zm2.25-2.248h.006V15H16.5v-.005Z" />
+                        </svg>
+                        <p>تقویم</p>
+                    </li>                    
+                    <li class="hover:text-light-nav-hover hover:bg-blue-100 hover:cursor-pointer flex items-center gap-7  p-3 rounded-lg dark:hover:bg-dark-nav-bg-hover">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                        </svg>
+                        <p>گزارشات</p>
+                    </li>                    
+                    <li class="hover:text-light-nav-hover hover:bg-blue-100 hover:cursor-pointer flex items-center gap-7  p-3 rounded-lg dark:hover:bg-dark-nav-bg-hover">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                        <p>تنطیمات</p>
+                    </li>                    
+                    <li class="hover:text-light-nav-hover hover:bg-blue-100 hover:cursor-pointer flex items-center gap-7  p-3 rounded-lg dark:hover:bg-dark-nav-bg-hover">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                        </svg>
+                        <p>پشتیبانی</p>
+                    </li>                    
+                    <li class="hover:text-light-nav-hover hover:bg-blue-100 hover:cursor-pointer flex items-center gap-7  p-3 rounded-lg dark:hover:bg-dark-nav-bg-hover">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                        </svg>
+                        <p>پروفایل</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex justify-center items-center mt-28 w-[70%] mx-auto bg-gray-300 py-2 px-5 rounded-xl dark:bg-dark-nav-btn dark:text-light-bg-wight">
+                <button id="light-btn2" class="flex items-center gap-2 p-2  rounded-xl bg-light-bg-wight dark:bg-dark-nav-btn ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                    </svg>
+                    <p>روشن</p>
+                </button>
+                <button id="dark-btn2" class=" flex items-center gap-2 p-2 rounded-xl dark:bg-dark-bg-nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                    </svg>
+                    <p>تاریک</p>
+                </button>
+
+            </div>
+            <div class="flex items-center gap-3 pb-4  mx-auto text-right pt-4 w-2/3 border-t mt-5 cursor-pointer hover:text-red-500 dark:text-light-bg-wight dark:hover:text-red-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
+                </svg>
+                <p>خروج</p>
+            </div>
+        </nav>
+    </section>
+
+    
+    <section class="flex w-[90%] mx-auto shadow-xl mt-5 p-3 md:hidden rounded-lg dark:bg-dark-bg-nav">
+        <svg id="ham-menu" class="cursor-pointer w-6 dark:text-white " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <p class="mx-auto dark:text-white">کوئرا لیست</p>
+    </section>
+
+
+    <section class=" w-[70%] h-screen mx-auto md:w-2/5">
+        <main>
+            <div class="md:hidden flex items-center gap-4 py-6 border-b ">
+                <img src="../assets/image/profile-pic.png" alt="profile-picture">
+                <div>
+                    <p class="font-bold dark:text-light-bg-wight">سلام ، رویا</p>
+                    <p class="text-sm text-gray-400">امروز ، سه شنبه ، ۵ بهمن ۱۴۰۲</p>
+                </div>
+            </div>
+            <div class="py-8">
+                <p class="font-bold text-xl dark:text-white">تسک های امروز</p>
+                <p class="text-gray-400 pt-3"><span id="task-counter">0</span> تسک برای امروز داری</p>
+            </div>
+            <div id="new-task" class="flex items-center gap-3 p-3 border-dashed border-light-nav-hover border text-light-nav-hover cursor-pointer rounded-lg mb-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+                <p>افزودن وظیفه جدید</p>
+            </div>
+            <div id="no-task-pic" class="w-full">
+                <img class="mx-auto" src="../assets/image/no-task.png" alt="no-task">
+            </div>
+            <div id="task-section" class="pt-7 shadow-xl px-2 rounded-lg hidden">
+                <input id="task-name-input" type="text" placeholder="نام تسک" class="block w-[90%] mx-auto focus:outline-gray-400 p-2 rounded-lg placeholder:font-bold dark:bg-dark-bg-body dark:text-white" autocomplete="off" required>
+                <input id="task-desc-input" type="text" placeholder="توضیحات" class="block w-[90%] mx-auto focus:outline-gray-400 p-2 rounded-lg placeholder:text-sm dark:bg-dark-bg-body dark:text-white" autocomplete="off" required>
+                <div id="tags-opener" class="flex items-center gap-2 border w-24 p-1  cursor-pointer text-gray-400 mt-6 mr-5 rounded-lg">
+                    <svg id="tags-arrow" class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd" d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                    </svg>
+                    <p class="p-1">تگ ها</p>  
+                </div>
+                <div id="tags" class="hidden justify-center items-center gap-3 border w-3/5 md:w-1/2 rounded-lg py-2 mr-5 mt-5 cursor-pointer shadow-xl">
+                    <p class="bg-light-low-bg text-light-low-text py-1 px-2">پایین</p>
+                    <div class="border border-solid w-[1px] h-6 border-gray-300"></div>
+                    <p class="px-2 py-1 bg-light-med-bg text-light-med-text">متوسط</p>
+                    <div class="border border-solid w-[1px] h-6 border-gray-300"></div>
+                    <p class="bg-light-high-bg text-light-high-text py-1 px-3">بالا</p>
+                </div>
+                <div class="py-10 justify-end flex gap-3 pl-3">
+                    <button id="cancle-btn" class="bg-gray-400 py-2 px-4 rounded-lg text-gray-700">X</button>
+                    <button id="add-task-btn" class="bg-light-nav-hover py-2 px-4 rounded-lg text-white">اضافه کردن تسک</button>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <ul id="ul">
+                </ul>
+            </div>
+            <div id="complete-section" class="pt-8 hidden">
+                <h3 class="font-bold text-lg dark:text-white">تسک های انجام شده</h3>
+                <p class="text-gray-400 pt-3"><span id="complete-task-counter">0</span> تسک انجام شده است </p>
+                <ul id ="complete-ul" class="mt-5">
+                </ul>
+            </div>
+        </main>
+    </section>
+
+
+    <script src="./todo.js"></script>
+</body>
+</html>
