@@ -427,6 +427,7 @@ function loadTasksFromLocalStorage() {
     });
   }
   updateTaskCounter()
+  
 }
 
 
